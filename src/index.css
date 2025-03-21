@@ -1,19 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 210 50% 98%;
+    --foreground: 222.2 47.4% 11.2%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222.2 47.4% 11.2%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222.2 47.4% 11.2%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 210 100% 50%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -32,22 +35,15 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -96,6 +92,101 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 rounded-2xl shadow-sm;
+  }
+  
+  .section-container {
+    @apply container max-w-7xl mx-auto px-4 py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-center mb-12;
+  }
+
+  .section-title h2 {
+    @apply text-3xl md:text-4xl font-bold mb-3;
+  }
+  
+  .section-title p {
+    @apply text-signspeak-gray-dark max-w-3xl mx-auto;
+  }
+  
+  .btn-primary {
+    @apply px-8 py-3 rounded-full bg-signspeak-blue text-white font-medium transition-all duration-300
+    hover:bg-signspeak-blue-dark hover:shadow-md active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-3 rounded-full bg-white text-signspeak-blue border border-signspeak-blue/20 font-medium
+    transition-all duration-300 hover:bg-signspeak-blue/5 hover:shadow-sm active:scale-95;
+  }
+  
+  .btn-ghost {
+    @apply px-6 py-2 rounded-full text-signspeak-gray-dark font-medium transition-all duration-300
+    hover:bg-signspeak-gray active:scale-95;
+  }
+
+  .link-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-signspeak-blue
+    after:transition-all after:duration-300 hover:after:w-full;
+  }
+  
+  .feature-card {
+    @apply glass-card p-8 transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+  }
+  
+  .use-case-card {
+    @apply glass-card p-8 transition-all duration-300 hover:shadow-md overflow-hidden relative;
+  }
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
 }
