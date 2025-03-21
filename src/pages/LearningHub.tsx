@@ -1,11 +1,18 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { Book, Play, Award, CheckCircle, User, Clock } from "lucide-react";
+import { 
+  Book, 
+  Play, 
+  Award, 
+  CheckCircle, 
+  User, 
+  Clock,
+  Search 
+} from "lucide-react";
 
 const LessonCard = ({ 
   title, 
