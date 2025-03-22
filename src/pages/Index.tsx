@@ -150,7 +150,7 @@ const Index: React.FC = () => {
       {/* Mobile toggle for sidebar */}
       <div className="flex justify-between items-center md:hidden p-4">
         <SidebarTrigger className="inline-flex" />
-        <h1 className="text-xl font-bold">SignSpeak</h1>
+        <h1 className="text-xl font-bold">Sign2Speak</h1>
         <div className="w-10"></div> {/* Spacer for balance */}
       </div>
 
@@ -164,7 +164,7 @@ const Index: React.FC = () => {
             <div className="max-w-xl" data-aos="true">
               <div className="flex items-center mb-4">
                 <HandWave className="w-12 h-12 text-signspeak-blue mr-4 animate-wave" />
-                <h1 className="text-4xl md:text-5xl font-bold">SignSpeak</h1>
+                <h1 className="text-4xl md:text-5xl font-bold">Sign2Speak</h1>
               </div>
               <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-signspeak-blue-dark">
                 Breaking barriers through AI
@@ -187,7 +187,7 @@ const Index: React.FC = () => {
               <div className="glass-card p-8 rounded-xl shadow-lg">
                 <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
                 <p className="mb-4">
-                  At SignSpeak, we're committed to creating a more inclusive world by breaking 
+                  At Sign2Speak, we're committed to creating a more inclusive world by breaking 
                   down communication barriers for Deaf and Mute individuals.
                 </p>
                 <p>
@@ -204,7 +204,7 @@ const Index: React.FC = () => {
       <section className="py-12 px-4 md:px-8 bg-gradient-to-b from-white to-signspeak-gray-light">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8" data-aos="true">
-            How SignSpeak Helps
+            How Sign2Speak Helps
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -237,7 +237,7 @@ const Index: React.FC = () => {
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-3xl font-bold mb-4">Ready to break communication barriers?</h2>
           <p className="text-xl mb-8">
-            Join thousands of users who are already experiencing seamless communication with SignSpeak.
+            Join thousands of users who are already experiencing seamless communication with Sign2Speak.
           </p>
           <Button 
             size="lg" 
@@ -257,7 +257,7 @@ const Index: React.FC = () => {
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-2xl font-bold flex items-center">
                   <Info className="w-6 h-6 mr-2 text-signspeak-blue" />
-                  Welcome to SignSpeak!
+                  Welcome to Sign2Speak!
                 </h2>
                 <Button variant="ghost" size="icon" onClick={closeOnboarding}>
                   <X className="w-5 h-5" />

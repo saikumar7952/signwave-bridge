@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
           href="#"
           className="text-2xl font-bold text-signspeak-blue-dark flex items-center gap-1"
         >
-          <span className="text-signspeak-blue animate-hand-sign">Sign</span>Speak
+          <span className="text-signspeak-blue animate-hand-sign">Sign2</span>Speak
         </a>
 
         {/* Desktop Navigation */}

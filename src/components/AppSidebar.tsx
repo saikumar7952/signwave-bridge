@@ -66,7 +66,7 @@ export function AppSidebar() {
       <SidebarHeader className="flex flex-col items-center p-4">
         <div className="flex items-center gap-2">
           <HandWave className="w-8 h-8 text-signspeak-blue animate-wave" />
-          <h1 className={`text-xl font-bold ${state === "collapsed" ? "hidden" : ""}`}>SignSpeak</h1>
+          <h1 className={`text-xl font-bold ${state === "collapsed" ? "hidden" : ""}`}>Sign2Speak</h1>
         </div>
         <p className={`text-xs text-muted-foreground mt-2 text-center ${state === "collapsed" ? "hidden" : ""}`}>
           Breaking barriers through AI

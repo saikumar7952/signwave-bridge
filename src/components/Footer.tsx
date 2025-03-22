@@ -11,11 +11,11 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-2 mb-4">
               <HandWave className="w-8 h-8" />
               <div className="text-xl font-bold">
-                <span className="text-signspeak-blue">Sign</span>Speak
+                <span className="text-signspeak-blue">Sign2</span>Speak
               </div>
             </div>
             <p className="text-signspeak-gray-dark mb-6 max-w-md">
-              SignSpeak bridges communication gaps between deaf and hearing individuals through AI-powered sign language translation.
+              Sign2Speak bridges communication gaps between deaf and hearing individuals through AI-powered sign language translation.
             </p>
             <div className="flex gap-4">
               <a href="#" className="p-2 rounded-full bg-signspeak-gray hover:bg-signspeak-blue hover:text-white transition-colors">
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
         
         <div className="pt-8 border-t border-signspeak-gray flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-sm text-signspeak-gray-dark">
-            © 2023 SignSpeak. All rights reserved.
+            © 2023 Sign2Speak. All rights reserved.
           </div>
           <div className="flex gap-6">
             <a href="#" className="text-sm text-signspeak-gray-dark hover:text-signspeak-blue">Privacy Policy</a>
